@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="1"
+        android:columnCount="2">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0">
+
+            <TextView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/item_task" />
+
+            <TextView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/item_project" />
+
+            <TextView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/item_time" />
+        </LinearLayout>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:id="@+id/edit_list_item_button"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:drawableRight="@drawable/ic_build_black_24dp"
+            android:background="@android:color/transparent"
+           />
+
+    </GridLayout>
+
+</LinearLayout>
